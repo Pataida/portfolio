@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    z-index: 100;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    letter-spacing: -2px;
+}
+
+.text-mute {
+    color: #444;
+}
+
+.text-main {
+    opacity: 0; /* JS will take over from here */
+    transform: scale(0.8);
+}
+
+/* Bento Section */
+.bento-section {
+    padding: 100px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    gap: 20px;
+}
+
+.bento-item {
+    background: #0a0a0a;
+    border-radius: 28px;
+    padding: 32px;
+    border: 1px solid #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-item:hover {
+    transform: translateY(-5px);
+    border-color: #444;
+}
+
+.bento-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+    transition: 0.5s;
+}
+
+.bento-item:hover::after {
+    left: 100%;
+}
+
+/* Specific Box Sizes */
+.profile-box {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-box {
+    grid-column: span 3;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-box img {
+    height: 100%;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.skills-box { grid-row: span 2; grid-column: span 1; background: linear-gradient(145deg, #111, #000); }
+.location-box { grid-column: span 1; }
+.work-box { grid-column: span 2; }
+
+/* Status Pulse */
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #34c759;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #34c759;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.status-wrap { 
+    display: flex; align-items: center; gap: 8px; margin-bottom: 15px; 
+}
+.status-text { 
+    font-size: 0.75rem; color: #34c759; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; 
+}
+
+.tag-container { 
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; 
+}
+.tag { 
+    font-size: 0.7rem; padding: 6px 12px; background: #1a1a1a; border-radius: 8px; color: #888; border: 1px solid #222; 
+}
+
+/* Portfolio & Pipeline */
+.portfolio-section, .pipeline-section { 
+    padding: 100px 50px; max-width: 1200px; margin: 0 auto; 
+}
+.project-visual { 
+    width: 100%; height: 600px; border-radius: 40px; overflow: hidden; background: #111; 
+}
+.reveal-img { 
+    width: 100%; height: 100%; object-fit: cover; transform: scale(1.2); 
+}
+
+.pipeline-grid { 
+    display: grid; grid-template-columns: 1fr 1fr; gap: 30px; 
+}
+.pipeline-card { 
+    background: rgba(255, 255, 255, 0.03); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); padding: 40px; border-radius: 32px; border: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.case-link {
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #fff;
+}
+
+.liquid { width: 40%; } /* Development Stage */
+.barber { width: 15%; } /* Concept Stage */
+
+h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+/* Text Styles */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+p {
+    color: #888;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+    color: #ccc;
+}
+
+/* Footer */
+.footer-section { 
+    padding: 150px 50px 50px; background: #000; text-align: center; border-top: 1px solid #1a1a1a; 
+}
+.cta-button { 
+    display: inline-block; padding: 20px 40px; background: #fff; color: #000; text-decoration: none; border-radius: 100px; font-weight: 600; 
+}
+
+.footer-tagline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background: #f5f5f7;
+}
+
+.footer-bottom {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    font-size: 0.8rem;
+}
+
+.logo-small {
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.top-btn {
+    background: none;
+    border: 1px solid #222;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.top-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .hero { height: 80vh; }
+    h1 { font-size: 2.2rem; padding: 0 20px; }
+    
+    .bento-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .profile-box { grid-column: span 1; flex-direction: column; text-align: center; padding: 40px 20px; }
+    
+    .profile-box img { 
+        width: 180px; 
+        height: 180px; 
+        margin: 0 0 20px 0; 
+        object-position: top center; /* Fix for the face alignment */
+    }
+
+    .skills-box, .work-box, .location-box { grid-column: span 1; grid-row: auto; }
+    .project-visual { height: 350px; }
+    .pipeline-grid { grid-template-columns: 1fr; }
+    .footer-tagline { font-size: 1.8rem; }
+}
