@@ -3,543 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Good Marketing</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="description" content="DerCode WebWorks: We don't just build websites; we build digital legacies. High-end web development and MIS solutions.">
+    <title>DerCode WebWorks | Legacy Builders</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <button id="darkModeToggle">🌙</button>
 
-    <!-- Scroll Progress Bar -->
-    <div id="scroll-progress"></div>
+    <nav>DerCode WebWorks</nav>
 
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">Just Good Marketing</div>
-    
-        <!-- Hamburger Icon -->
-        <div class="menu-toggle" id="menu-toggle">
-            <!-- Hamburger SVG -->
-            <svg class="hamburger" viewBox="0 0 100 80" width="30" height="30">
-                <rect class="bar1" width="100" height="10" rx="5"></rect>
-                <rect class="bar2" y="30" width="100" height="10" rx="5"></rect>
-                <rect class="bar3" y="60" width="100" height="10" rx="5"></rect>
-            </svg>
+    <section class="hero">
+        <div class="container">
+            <h1 class="text-mute">A post lasts a day.</h1>
+            <h1 class="text-main">A website builds a legacy.</h1>
         </div>
-    
-        <!-- Navigation Links -->
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#hero" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>    
-    
-   <!-- Hero Section -->
-    <section id="hero">
-        <h1 class="animated-title">Web Development That <span id="typing-text"></span></h1>
-        <p class="animated-subtitle">Just Good Marketing</p>
-        <a href="#portfolio" class="cta-button">View Portfolio</a>
     </section>
 
+    <section class="spacer">
+        <p>Scroll to see the magic...</p>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-image">
-                <img src="images/me.jpg" alt="Pataida Deron Chida">
+    <!-- Bento Box Section -->
+    <section class="bento-section">
+        <div class="bento-grid">
+            
+            <div class="bento-item profile-box">
+                <img src="IMG_7943 Copy.jpg" alt="Developer Photo">
+                <div class="content">
+                    <div class="status-wrap">
+                        <span class="dot"></span>
+                        <span class="status-text">Available for new legacies</span>
+                    </div>
+                    <h3>The Architect</h3>
+                    <p>Turning abstract ideas into high-performance digital engines.</p>
+                </div>
             </div>
-            <div class="about-content">
-                <h3>Pataida Deron Chida</h3>
-                <p>Understanding how things are made and creating new things has always been my passion. From designing visually stimulating websites to business systems, I aim to exceed user expectations. My curiosity about technology drives me to explore advancements that help businesses and communities thrive.</p>
-                
-                <h4>Skills</h4>
-                <ul>
-                    <li>UI/UX Design</li>
-                    <li>Interactive Media</li>
-                    <li>Web Design & Development</li>
-                    <li>HTML5, CSS, JavaScript, jQuery, PHP, C#</li>
-                    <li>MySQL & Microsoft SQL Server</li>
-                </ul>
-    
-                <h4>Education</h4>
-                <p><strong>Level 4 & 5 Diplomas in Computing</strong> - NCC Education (2023/24)</p>
-    
-                <h4>Contact Information</h4>
-                <p><strong>Phone:</strong> +263 71 509 1057 / +263 77 876 1205</p>
-                <p><strong>Email:</strong> pataidachida@gmail.com</p>
+
+            <div class="bento-item skills-box">
+                <h3>Craftsmanship</h3>
+                <div class="tag-container">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">GSAP</span>
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">Responsive</span>
+                </div>
+            </div>
+
+            <div class="bento-item location-box">
+                <h3>HQ</h3>
+                <p>Harare, Zimbabwe</p>
+                <div class="time-display" id="local-time">CAT</div>
+            </div>
+
+            <div class="bento-item work-box">
+                <div class="work-header">
+                    <h3>Hurudza Butcheries</h3>
+                    <span class="case-link">View Case Study →</span>
+                </div>
+                <p>A masterclass in transforming a local butchery into a premium digital brand. Success isn't just a website; it's a statement.</p>
             </div>
         </div>
     </section>
-    
-
-    <!-- Services & Pricing -->
-    <section id="services">
-        <h2>Services & Pricing</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Personal Website - $150</h3>
-                <ul class="service-details">
-                    <li>Up to 5 Static Pages</li>
-                    <li>Responsive Design</li>
-                    <li>Fast Loading Speed</li>
-                    <li>Contact Form</li>
-                    <li>Map Location Integration</li>
-                    <li>SSL Certificate</li>
-                    <li>Email Integration</li>
-                </ul>
-            </div>
-    
-            <div class="service-card">
-                <h3>Business Website - $250</h3>
-                <ul class="service-details">
-                    <li>Up to 10 Pages</li>
-                    <li>Responsive Design</li>
-                    <li>Fast Loading Speed</li>
-                    <li>Contact Form</li>
-                    <li>Map Location Integration</li>
-                    <li>SSL Certificate</li>
-                    <li>Business Email setup and integration</li>
-                    <li>Dynamic Features</li>
-                    <li>Login and Sign Up Forms</li>
-                    <li>Custom Admin Panel</li>
-                </ul>
-            </div>
-    
-            <div class="service-card">
-                <h3>E-Commerce Website - $500</h3>
-                <ul class="service-details">
-                    <li>Inludes Personal and Business features</li>
-                    <li>Product Listings & Categories</li>
-                    <li>Shopping Cart & Place Order</li>
-                    <li>Product Reviews & Ratings</li>
-                    <li>Database Integration</li>
-                    <li>Inventory Management System</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        
-        <!-- Category Buttons -->
-        <div class="portfolio-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="business">Business</button>
-            <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
-            <button class="filter-btn" data-filter="landing">Landing Page</button>
-        </div>
-
-        <!-- Portfolio Items -->
-        <div class="portfolio-grid">
-            <div class="portfolio-item business" data-category="business" data-video="videos/project1.mp4">
-                <video src="videos/project1.mp4" muted loop></video>
+    <section class="portfolio-section">
+        <div class="project-card">
+            <div class="project-info">
+                <span class="category">Web Design & Strategy</span>
+                <h2>Hurudza Butcheries</h2>
+                <p>Transforming traditional retail into a premium digital experience.</p>
             </div>
-            <div class="portfolio-item ecommerce" data-category="ecommerce" data-video="videos/project2.mp4">
-                <video src="videos/project2.mp4" muted loop></video>
-            </div>
-            <div class="portfolio-item landing" data-category="landing" data-video="videos/project3.mp4">
-                <video src="videos/project3.mp4" muted loop></video>
+            <div class="project-visual">
+                <img src="hurudza-mockup.jpg" alt="Hurudza Project" class="reveal-img">
             </div>
         </div>
     </section>
-    <!-- Modal for Expanded Video -->
-    <div id="video-modal">
-        <div class="video-container">
-            <video id="expanded-video" controls></video>
-        </div>
-    </div>
 
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What Clients Say</h2>
-        <div class="testimonial-container">
-            <button class="prev-btn">&#10094;</button>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <p>"Just Good Marketing transformed our online presence! Highly recommended."</p>
-                    <h4>- Alex M.</h4>
-                </div>
-                <div class="testimonial">
-                    <p>"Professional, modern, and highly functional websites. Excellent service!"</p>
-                    <h4>- Sarah K.</h4>
-                </div>
-                <div class="testimonial">
-                    <p>"Our business grew thanks to their amazing web development skills."</p>
-                    <h4>- James D.</h4>
-                </div>
+    <!-- Pipeline Section -->
+    <section class="pipeline-section">
+        <h2 class="section-title">In the Lab</h2>
+        <div class="pipeline-grid">
+            
+            <div class="pipeline-card">
+                <div class="badge">Redesign</div>
+                <h3>Liquid Coating</h3>
+                <p>Elevating industrial protection to a luxury digital standard. Focusing on immersive 3D visuals and fluid motion.</p>
+                <div class="progress-bar"><div class="progress liquid"></div></div>
             </div>
-            <button class="next-btn">&#10095;</button>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Details</h2>
-        <div class="contact-details">
-            <p><strong>Phone:</strong> +263 71 509 1057</p>
-            <p><strong>Email:</strong> pataidachida@gmail.com.com</p>
-            <div class="social-links">
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Twitter</a>
-                <a href="#" target="_blank">LinkedIn</a>
+            <div class="pipeline-card">
+                <div class="badge">Web Application</div>
+                <h3>The Barbershop Engine</h3>
+                <p>A full-stack Management Information System. Handling staff, scheduling, and automated accounting for modern grooming hubs.</p>
+                <div class="progress-bar"><div class="progress barber"></div></div>
             </div>
         </div>
     </section>
-    
 
-    <!-- Scroll-to-Top Button -->
-    <button id="scrollTopBtn">&#8679;</button>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <p class="footer-tagline">Ready to build your legacy?</p>
+            
+            <a href="https://wa.me/263715091057?text=Hi%20DerCode%20WebWorks!%20I'm%20interested%20in%20building%20a%20website%20legacy." 
+            class="cta-button" 
+            target="_blank">
+            Chat on WhatsApp
+            </a>
+            
+            <div class="footer-bottom">
+                <div class="logo-small">//D</div>
+                <p>&copy; 2026 DerCode WebWorks. All rights reserved.</p>
+                <button id="back-to-top" class="top-btn">↑</button>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    
-    <!-- Background Particle Canvas -->
-    <canvas id="particleCanvas"></canvas>
-
-
-    <!-- JavaScripts -->
-    <script>
-        $(document).ready(function() {
-            // Smooth scroll effect
-            $('a[href^="#"]').on('click', function(event) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 50
-                }, 1000);
-            });
-
-            // Fade-in animations on scroll
-            $(window).on('scroll', function() {
-                $('.animated-title, .animated-subtitle, .cta-button, .service-card, .portfolio-item, .animated-button').each(function() {
-                    let position = $(this).offset().top;
-                    let scrollPos = $(window).scrollTop() + $(window).height() - 100;
-                    if (scrollPos > position) {
-                        $(this).addClass('visible');
-                    }
-                });
-
-                // Active link highlight
-                let scrollPos = $(window).scrollTop();
-                $('.nav-link').each(function() {
-                    let section = $($(this).attr('href'));
-                    if (section.position().top - 60 <= scrollPos && section.position().top + section.height() > scrollPos) {
-                        $('.nav-link').removeClass('active');
-                        $(this).addClass('active');
-                    }
-                });
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            let index = 0;
-            const testimonials = $(".testimonial");
-            const totalTestimonials = testimonials.length;
-
-            function showTestimonial(n) {
-                if (n >= totalTestimonials) { index = 0; }
-                else if (n < 0) { index = totalTestimonials - 1; }
-                else { index = n; }
-
-                $(".testimonial-slider").css("transform", `translateX(-${index * 100}%)`);
-            }
-
-            $(".next-btn").click(() => showTestimonial(index + 1));
-            $(".prev-btn").click(() => showTestimonial(index - 1));
-
-            // Auto-slide every 5 seconds
-            setInterval(() => showTestimonial(index + 1), 5000);
-        });
-
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(".filter-btn").click(function () {
-                let category = $(this).attr("data-filter");
-
-                $(".filter-btn").removeClass("active");
-                $(this).addClass("active");
-
-                if (category === "all") {
-                    $(".portfolio-item").fadeIn(); // Show all items
-                } else {
-                    $(".portfolio-item").each(function () {
-                        if ($(this).attr("data-category") === category) {
-                            $(this).fadeIn(); // Show matching items
-                        } else {
-                            $(this).fadeOut(); // Hide non-matching items
-                        }
-                    });
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $("#contactForm").submit(function (event) {
-                event.preventDefault(); // Prevent form from refreshing the page
-
-                let name = $("#name").val().trim();
-                let email = $("#email").val().trim();
-                let message = $("#message").val().trim();
-                let formMessage = $("#formMessage");
-
-                if (name === "" || email === "" || message === "") {
-                    formMessage.text("All fields are required.").removeClass("success").addClass("error");
-                } else if (!validateEmail(email)) {
-                    formMessage.text("Enter a valid email address.").removeClass("success").addClass("error");
-                } else {
-                    formMessage.text("Message sent successfully!").removeClass("error").addClass("success");
-                    $("#contactForm")[0].reset(); // Clear form
-                }
-            });
-
-            function validateEmail(email) {
-                let re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return re.test(email);
-            }
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            // Show/hide scroll-to-top button
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 300) {
-                    $("#scrollTopBtn").fadeIn();
-                } else {
-                    $("#scrollTopBtn").fadeOut();
-                }
-            });
-
-            // Smooth scroll to top
-            $("#scrollTopBtn").click(function () {
-                $("html, body").animate({ scrollTop: 0 }, 800);
-            });
-        });
-    </script>
-    <script>
-        $(window).on("load", function () {
-            $("#preloader").fadeOut(800); // Smooth fade-out effect
-        });
-    </script>
-    <script>
-        // Add tilt effect to portfolio items
-        $(document).ready(function () {
-            $(".portfolio-item").mousemove(function (e) {
-                let x = (e.pageX - $(this).offset().left) / $(this).width() - 0.5;
-                let y = (e.pageY - $(this).offset().top) / $(this).height() - 0.5;
-
-                $(this).css("transform", `rotateY(${x * 10}deg) rotateX(${y * -10}deg)`);
-            });
-
-            $(".portfolio-item").mouseleave(function () {
-                $(this).css("transform", "rotateY(0deg) rotateX(0deg)");
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            // Check local storage for dark mode preference
-            if (localStorage.getItem("darkMode") === "enabled") {
-                $("body").addClass("dark-mode");
-            }
-
-            // Toggle Dark Mode
-            $("#darkModeToggle").click(function () {
-                $("body").toggleClass("dark-mode");
-
-                // Store preference in local storage
-                if ($("body").hasClass("dark-mode")) {
-                    localStorage.setItem("darkMode", "enabled");
-                } else {
-                    localStorage.setItem("darkMode", "disabled");
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-        let words = ["Sells.", "Inspires.", "Performs.", "Stands Out."];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingSpeed = 150;
-        let deletingSpeed = 100;
-        let delayBetweenWords = 2000;
-        let interval;
-
-        function typeEffect() {
-            let currentWord = words[wordIndex];
-
-            if (!isDeleting) {
-                $("#typing-text").text(currentWord.substring(0, charIndex++));
-            } else {
-                $("#typing-text").text(currentWord.substring(0, charIndex--));
-            }
-
-            if (!isDeleting && charIndex === currentWord.length + 1) {
-                clearInterval(interval);
-                setTimeout(() => {
-                    isDeleting = true;
-                    interval = setInterval(typeEffect, deletingSpeed);
-                }, delayBetweenWords);
-            } else if (isDeleting && charIndex === 0) {
-                clearInterval(interval);
-                isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-                setTimeout(() => {
-                    interval = setInterval(typeEffect, typingSpeed);
-                }, 500);
-            }
-        }
-
-        interval = setInterval(typeEffect, typingSpeed);
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            let canvas = document.getElementById("particleCanvas");
-            let ctx = canvas.getContext("2d");
-
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-
-            let particles = [];
-
-            // Create Particle Object
-            class Particle {
-                constructor(x, y, size, speedX, speedY) {
-                    this.x = x;
-                    this.y = y;
-                    this.size = size;
-                    this.speedX = speedX;
-                    this.speedY = speedY;
-                }
-
-                update() {
-                    this.x += this.speedX;
-                    this.y += this.speedY;
-
-                    // Bounce off walls
-                    if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
-                    if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
-                }
-
-                draw() {
-                    ctx.fillStyle = "rgba(255, 204, 0, 0.8)";
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                    ctx.fill();
-                }
-            }
-
-            // Initialize Particles
-            function createParticles(num) {
-                for (let i = 0; i < num; i++) {
-                    let size = Math.random() * 3 + 1;
-                    let x = Math.random() * canvas.width;
-                    let y = Math.random() * canvas.height;
-                    let speedX = (Math.random() - 0.5) * 2;
-                    let speedY = (Math.random() - 0.5) * 2;
-                    particles.push(new Particle(x, y, size, speedX, speedY));
-                }
-            }
-
-            // Animate Particles
-            function animateParticles() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-                particles.forEach((particle) => {
-                    particle.update();
-                    particle.draw();
-                });
-
-                requestAnimationFrame(animateParticles);
-            }
-
-            createParticles(80); // Adjust number of particles
-            animateParticles();
-
-            // Resize Canvas on Window Resize
-            window.addEventListener("resize", () => {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                particles = [];
-                createParticles(80);
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(window).on("scroll", function () {
-                let scrollTop = $(window).scrollTop();
-                let docHeight = $(document).height() - $(window).height();
-                let scrollPercent = (scrollTop / docHeight) * 100;
-                $("#scroll-progress").css("width", scrollPercent + "%");
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            // Play video at fast speed on hover
-            $(".portfolio-item").hover(
-                function () {
-                    let video = $(this).find("video").get(0);
-                    video.playbackRate = 2.5; // Fast speed
-                    video.play();
-                },
-                function () {
-                    let video = $(this).find("video").get(0);
-                    video.pause();
-                    video.currentTime = 0; // Reset to start
-                }
-            );
-
-            // Click to expand video in modal
-            $(".portfolio-item").click(function () {
-                let videoSrc = $(this).data("video");
-                let modalVideo = $("#expanded-video");
-
-                modalVideo.attr("src", videoSrc);
-                modalVideo.get(0).playbackRate = 1; // Normal speed
-                modalVideo.get(0).play();
-                
-                $("#video-modal").addClass("active");
-            });
-
-            // Click outside to close modal
-            $("#video-modal").click(function (e) {
-                if ($(e.target).closest(".video-container").length === 0) {
-                    $("#video-modal").removeClass("active");
-                    $("#expanded-video").get(0).pause();
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $("#menu-toggle").click(function () {
-                $(this).toggleClass("active");
-                $("#nav-links").toggleClass("active");
-            });
-
-            $(".nav-link").click(function () {
-                $("#menu-toggle").removeClass("active");
-                $("#nav-links").removeClass("active");
-            });
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
